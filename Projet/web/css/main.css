@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 sept. 2018, 14:00:02
+    Author     : dodot
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+html, body {
+    margin: 0; border: 0; padding: 0;
+    width: 100%; height: 100%; min-height: 100%;
+    font-family: 'Comfortaa', cursive;
+    background: url('../pictures/field.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+/* ===== header ===== */
+#header {
+    background: rgba(255,255,255,0.8);
+    margin: 0;  margin-bottom: 0.5em;
+    padding: 0.5em 1em;
+    height: 3em;
+    display: flex;
+}
+
+#header > * { margin: 0; padding: 0; height: 100%; display: inline-block; }
+
+#header #logo {
+    flex-grow: 0;
+    width: max-content;
+    font-family: 'Courgette', cursive;
+    font-size: 2em;
+}
+
+#header #account {
+    flex-grow: 1;
+    vertical-align: middle;
+    text-align: right;
+}
+#header #account > * {
+    display: inline-block;
+    height: 100%;
+}
+#header #account a:hover {
+    text-decoration: underline;
+}
+    
+#header #basket {
+    flex-grow: 0;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+#header #basket > * {
+    height: 100%;
+}
+#header #basket img {
+    object-fit: scale-down;
+}
+#header #basket p {
+    margin: 0; margin-left: 0.25em;
+    font-weight: bolder;
+    font-size: 1.5em;
+    height: auto;
+}
+
+/* ===== body ===== */
+#body {
+    background: rgba(255,255,255,0.8);
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    padding: 2em;
+}
+
+.hr { border-left:1px solid #000; height:100%; margin: 0 0.5em; }
