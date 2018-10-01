@@ -131,11 +131,33 @@ a:hover { text-decoration: underline;}
 /* ===== Footer ===== */
 #footer {
     width: 65%; min-height: max-content;
-    margin: auto; margin-bottom: 3em;
-    padding: 2em;
+    margin: auto;   margin-bottom: 3em;
+    padding: 2em;   padding-top: 0;
     background: rgba(255,255,255,0.8);
     display: flex;
-    
+}
+#footer * {padding: 0; margin: auto; margin-bottom: 0.25em; }
+#footer #about{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#footer #sns {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#footer #sns #icon-container { display: flex; }
+#footer #sns #icon-container #facebook {
+    width: 2em; height: 2em;
+    background: url(../pictures/facebook-logo-black.png) no-repeat;
+    transition: all ease-in-out 0.33s;
+    border: white 2px solid;
+    border-radius: 1em;
+}
+#footer #sns #icon-container #facebook:hover { 
+    background: url(../pictures/facebook-logo-blue.png) no-repeat;
+    transition: all ease-in-out 0.33s;
 }
 
 /* ===== Autres ===== */
