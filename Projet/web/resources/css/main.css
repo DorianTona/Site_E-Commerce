@@ -19,6 +19,9 @@ html, body {
     background-size: cover;
 }
 
+a { color: black; text-decoration: none; }
+a:hover { text-decoration: underline;}
+
 /* ===== header ===== */
 #header {
     background: rgba(255,255,255,0.8);
@@ -46,9 +49,6 @@ html, body {
     display: inline-block;
     height: 100%;
 }
-#header #account a:hover {
-    text-decoration: underline;
-}
     
 #header #basket {
     flex-grow: 0;
@@ -56,6 +56,7 @@ html, body {
     display: flex;
     align-items: center;
 }
+#header #basket:hover{ text-decoration: none; }
 #header #basket > * {
     height: 100%;
 }
@@ -71,11 +72,71 @@ html, body {
 
 /* ===== body ===== */
 #body {
+    display: flex;
+    flex-direction: column;
     background: rgba(255,255,255,0.8);
-    width: 65%;
-    height: 100%;
+    width: 65%; height: 100%;   min-height: max-content;
     margin: auto;
     padding: 2em;
 }
 
+/* ===== Placeholders ===== */
+.placeholder {
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+.placeholder > h2 {
+    margin: 0;  padding: 0;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+.placeholder > .articles {
+    width: 100%;    min-height: max-content;
+    overflow-x: scroll; overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5em 0;
+}
+.placeholder > .articles .item {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em;
+    transition: all ease-in-out 0.33s;
+}
+.placeholder > .articles .item:hover {
+    background: white;
+    border-radius: 1em;
+    transition: all ease-in-out 0.33s;
+}
+.placeholder > .articles .item:last-child {margin: 0;}
+.placeholder > .articles .item h3 {
+    margin: 0;  padding: 0;
+}
+.placeholder > .articles .item img {
+    width: 14em; height: 9em;
+    margin: 0.5em 0;
+    object-fit: contain;
+}
+.placeholder > .articles .item .item-bottom { display: flex; }
+.placeholder > .articles .item .item-bottom * {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* ===== Footer ===== */
+#footer {
+    width: 65%; min-height: max-content;
+    margin: auto; margin-bottom: 3em;
+    padding: 2em;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    
+}
+
+/* ===== Autres ===== */
 .hr { border-left:1px solid #000; height:100%; margin: 0 0.5em; }
