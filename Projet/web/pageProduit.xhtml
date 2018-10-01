@@ -8,10 +8,11 @@ and open the template in the editor.
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
         <title>La Boutique du Terroir - [nom du produit]</title>
+        <link rel="icon" type="image/png" href="./resources/pictures/Icone.png" />
         <link rel="stylesheet" href="./resources/css/main.css" />
         <link rel="stylesheet" href="./resources/css/pageProduit.css" />
     </h:head>
-    <body>
+    <h:body>
         <div id="header">
             <h1 id="logo">La Boutique du terroir</h1>
             <div id="account">
@@ -19,7 +20,7 @@ and open the template in the editor.
                 <p>ou</p>
                 <a>Créer un compte</a>
             </div>
-            <a id="basket">
+            <a id="basket" href="#">
                 <div class="hr" />
                 <img src="./resources/pictures/basket.png" />
                 <p>(X)</p>
@@ -27,7 +28,67 @@ and open the template in the editor.
         </div>
         
         <div id="body">
+            <div id="top">
+                <div id="pictures">
+                    
+                </div>
+                <div id="description">
+                    <div id="top-row">
+                        <h2>Fromage de tête</h2>
+                        <p class="producer">de <a>[producteur]</a> </p>
+                        <p class="rating">100%</p>
+                    </div>
+                    <p id="bottom-row">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id tincidunt metus. Nullam nibh ante, bibendum in efficitur eu, placerat nec quam. Suspendisse sodales volutpat tincidunt. Aenean commodo tincidunt volutpat. Quisque euismod nec lectus vitae volutpat. Pellentesque tristique arcu id ligula ornare, in malesuada nulla efficitur. Vestibulum rutrum elementum arcu. Nam fringilla, ipsum eget venenatis placerat, sem quam sodales mi, vel euismod velit neque a est. In condimentum consequat lacus, in efficitur lacus rhoncus a. Maecenas condimentum aliquet nisl, at pretium mauris vestibulum vel. Curabitur posuere odio quis nibh hendrerit, eu volutpat augue hendrerit. Phasellus imperdiet justo eget nibh dapibus bibendum. Sed nunc enim, feugiat et efficitur ac, auctor sit amet eros. Donec at tortor ante. Vestibulum elementum ultrices urna, sit amet fermentum justo posuere eu. Nam velit erat, convallis et enim vitae, ultrices consectetur eros.
+                    </p>
+                </div>
+            </div>
             
+            <div class="placeholder">
+                <h2>Articles similaires</h2>
+                <div class="articles">
+                    <a class="item" href="#">
+                        <h3>Fromage de tête</h3>
+                        <img src="./resources/pictures/fromage-de-tete.jpg" />
+                        <div class="item-bottom">
+                            <p class="price">6.66€</p>
+                            <p class="rating">100%</p>
+                        </div>
+                    </a>
+                    <a class="item" href="#">
+                        <h3>Pâté de faisan</h3>
+                        <img src="./resources/pictures/pate-de-faisan.jpg" />
+                        <div class="item-bottom">
+                            <p class="price">6.66€</p>
+                            <p class="rating">100%</p>
+                        </div>
+                    </a>
+                    <a class="item" href="#">
+                        <h3>Pâté de foies</h3>
+                        <img src="./resources/pictures/pate-de-foies.jpg" />
+                        <div class="item-bottom">
+                            <p class="price">6.66€</p>
+                            <p class="rating">100%</p>
+                        </div>
+                    </a>
+                    <a class="item" href="#">
+                        <h3>Pâté en croute</h3>
+                        <img src="./resources/pictures/pate-en-croute.jpg" />
+                        <div class="item-bottom">
+                            <p class="price">6.66€</p>
+                            <p class="rating">100%</p>
+                        </div>
+                    </a>
+                    <a class="item" href="#">
+                        <h3>Rillettes du Mans</h3>
+                        <img src="./resources/pictures/rillettes-du-mans.jpg" />
+                        <div class="item-bottom">
+                            <p class="price">6.66€</p>
+                            <p class="rating">100%</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
             
         <div id="footer">
@@ -43,5 +104,5 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-    </body>
+    </h:body>
 </html>

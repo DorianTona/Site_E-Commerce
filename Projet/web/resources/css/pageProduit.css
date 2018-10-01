@@ -8,3 +8,38 @@ and open the template in the editor.
     Author     : DorianTona
 */
 
+#top {
+    display: flex;
+}
+/* images */
+#top #pictures {
+    flex-grow: 0;
+    flex-direction: column;
+    width: 64em; height: 100%;
+    margin: 0 1em 1em 0;
+    border: black 1px solid;
+    padding: 1em;
+}
+#top #pictures #album {
+    
+}
+
+/* description */
+#top #description {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+#top #description #top-row {
+    display: flex;
+    align-items: flex-end;
+}
+#top #description #top-row > * { height: max-content; width: max-content; margin: 0 1em 0 0; }
+#top #description #top-row h2 { flex-grow: 0; }
+#top #description #top-row .producer { flex-grow: 1; }
+#top #description #top-row a { font-weight: bolder; }
+#top #description #top-row .rating { flex-grow: 0; }
+
+/* options d'achat */
+
+/* Section commentaires */

@@ -29,25 +29,29 @@ a:hover { text-decoration: underline;}
     padding: 0.5em 1em;
     height: 3em;
     display: flex;
+    align-items: center;
 }
 
-#header > * { margin: 0; padding: 0; height: 100%; display: inline-block; }
+#header > * { margin: 0; padding: 0; height: 100%; }
 
 #header #logo {
     flex-grow: 0;
-    width: max-content;
+    height: max-content;    width: max-content;
     font-family: 'Courgette', cursive;
     font-size: 2em;
 }
 
 #header #account {
     flex-grow: 1;
-    vertical-align: middle;
+    height: max-content;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 #header #account > * {
-    display: inline-block;
-    height: 100%;
+    height: min-content;
+    margin: 0 0 0 0.25em;
 }
     
 #header #basket {
@@ -56,18 +60,18 @@ a:hover { text-decoration: underline;}
     display: flex;
     align-items: center;
 }
+#header #basket > * { margin: 0; margin-left: 0.25em;}
 #header #basket:hover{ text-decoration: none; }
-#header #basket > * {
-    height: 100%;
-}
 #header #basket img {
+    height: 100%;
     object-fit: scale-down;
+    padding-left: 0.5em;
+    border-left: black 1px solid;
 }
 #header #basket p {
-    margin: 0; margin-left: 0.25em;
     font-weight: bolder;
     font-size: 1.5em;
-    height: auto;
+    height: max-content;
 }
 
 /* ===== body ===== */
@@ -159,6 +163,3 @@ a:hover { text-decoration: underline;}
     background: url(../pictures/facebook-logo-blue.png) no-repeat;
     transition: all ease-in-out 0.33s;
 }
-
-/* ===== Autres ===== */
-.hr { border-left:1px solid #000; height:100%; margin: 0 0.5em; }
