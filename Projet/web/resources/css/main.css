@@ -13,13 +13,15 @@ and open the template in the editor.
 
 html, body {
     margin: 0; border: 0; padding: 0;
-    width: 100%; height: 100%; min-height: 100%;
-    font-family: 'Comfortaa', cursive;
+    height: 100%; min-height: 100%;
+    width: 100%;
     background: url('../pictures/field.jpg') no-repeat center fixed;
     background-size: cover;
 }
 
-a { color: black; text-decoration: none; }
+body * { font-family: 'Comfortaa', cursive; }
+
+a { color: black; text-decoration: none; font-weight: bold;  }
 a:hover { text-decoration: underline;}
 
 /* ===== header ===== */
@@ -81,7 +83,7 @@ a:hover { text-decoration: underline;}
     background: rgba(255,255,255,0.8);
     width: 65%; height: 100%;   min-height: max-content;
     margin: auto;
-    padding: 2em;
+    padding: 2em;   padding-bottom: 0;
 }
 
 /* ===== Placeholders ===== */
@@ -91,7 +93,7 @@ a:hover { text-decoration: underline;}
     flex-direction: column;
     margin: 1em 0;
 }
-.placeholder > h2 {
+.placeholder > .placeholder-name {
     margin: 0;  padding: 0;
     width: 100%;
     overflow-wrap: break-word;
@@ -116,9 +118,10 @@ a:hover { text-decoration: underline;}
     border-radius: 1em;
     transition: all ease-in-out 0.33s;
 }
-.placeholder > .articles .item:last-child {margin: 0;}
-.placeholder > .articles .item h3 {
+.placeholder > .articles .item:last-child { margin: 0; }
+.placeholder > .articles .item .nom-produit {
     margin: 0;  padding: 0;
+    text-align: center;
 }
 .placeholder > .articles .item img {
     width: 14em; height: 9em;
@@ -134,13 +137,15 @@ a:hover { text-decoration: underline;}
 
 /* ===== Footer ===== */
 #footer {
-    width: 65%; min-height: max-content;
+    width: 65%;
+    min-height: max-content;
     margin: auto;   margin-bottom: 3em;
-    padding: 2em;   padding-top: 0;
+    border-top: darkgray 1px dashed;
+    padding: 2em;
     background: rgba(255,255,255,0.8);
     display: flex;
 }
-#footer * {padding: 0; margin: auto; margin-bottom: 0.25em; }
+#footer * { padding: 0; margin: auto; margin-bottom: 0.25em; }
 #footer #about{
     display: flex;
     flex-direction: column;
@@ -152,14 +157,19 @@ a:hover { text-decoration: underline;}
     margin: auto;
 }
 #footer #sns #icon-container { display: flex; }
-#footer #sns #icon-container #facebook {
+#footer #sns #icon-container > * {
     width: 2em; height: 2em;
-    background: url(../pictures/facebook-logo-black.png) no-repeat;
     transition: all ease-in-out 0.33s;
     border: white 2px solid;
     border-radius: 1em;
+    margin: 0 0.25em;
 }
-#footer #sns #icon-container #facebook:hover { 
-    background: url(../pictures/facebook-logo-blue.png) no-repeat;
+#footer #sns #icon-container > *:hover {
     transition: all ease-in-out 0.33s;
 }
+#footer #sns #icon-container #facebook { background: url(../pictures/sns/facebook-logo-black.png) no-repeat; }
+#footer #sns #icon-container #facebook:hover { background: url(../pictures/sns/facebook-logo-color.png) no-repeat; }
+#footer #sns #icon-container #pinterest { background: url(../pictures/sns/pinterest-logo-black.png) no-repeat; }
+#footer #sns #icon-container #pinterest:hover { background: url(../pictures/sns/pinterest-logo-color.png) no-repeat; }
+#footer #sns #icon-container #twitter { background: url(../pictures/sns/twitter-logo-black.png) no-repeat; }
+#footer #sns #icon-container #twitter:hover { background: url(../pictures/sns/twitter-logo-color.png) no-repeat; }
