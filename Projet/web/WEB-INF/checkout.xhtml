@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>La Boutique du Terroir - [nom du produit]</title>
+        <link rel="icon" type="image/png" href="../resources/pictures/Icone.png" />
+        <link rel="stylesheet" href="../resources/css/main.css" />
+        <link rel="stylesheet" href="../resources/css/checkout.css" />
+    </h:head>
+    <h:body>
+        <div id="header">
+            <h1 id="logo">La Boutique du terroir</h1>
+            <div id="account">
+                <a>Connexion</a>
+                <p>ou</p>
+                <a>Créer un compte</a>
+            </div>
+            <a id="basket" href="#">
+                <img src="../resources/pictures/basket.png" />
+                <p>(X)</p>
+            </a>
+        </div>
+        <div id="body">
+            <div id="paiement">
+                <h2>Information de paiement</h2>
+                <h3>Coordonnées du détenteur</h3>
+                <table>
+                    <tr><th>Nom</th>            <th><input id="nom" value=""/></th></tr>
+                    <tr><th>Prénom</th>         <th><input id="prenom" value=""/></th></tr>
+                    <tr><th>Code Postal</th>    <th><input id="cp" value=""/></th></tr>
+                    <tr><th>Rue</th>            <th><input id="rue" value=""/></th></tr>
+                </table>
+                <h3>Coodonnées bancaires</h3>
+                <table>
+                    <tr><th>N° de carte</th>    <th><input id="carte" value=""/></th></tr>
+                    <tr><th>CVV</th>            <th><input id="cvv" value=""/></th></tr>
+                    <tr><th>Expiration</th>     <th><input id="expiration" value=""/></th></tr>
+                </table>
+            </div>
+            <div id="livraison">
+                <h2>Information de livraison</h2>
+                <div id="checkbox">
+                    <input type="checkbox" id="same" value="same"/>
+                    <label for="same">Même adresse que la facturation</label>
+                </div>
+                <h3>Adresse de livraison</h3>
+                <table>
+                    <tr><th>Nom</th>            <th><input id="nom" value=""/></th></tr>
+                    <tr><th>Prénom</th>         <th><input id="prenom" value=""/></th></tr>
+                    <tr><th>Code Postal</th>    <th><input id="cp" value=""/></th></tr>
+                    <tr><th>Rue</th>            <th><input id="rue" value=""/></th></tr>
+                </table>
+            </div>
+        </div>
+            
+        <div id="footer">
+            <div id="about">
+                <p>LA BOUTIQUE DU TERROIR</p>
+                <p>2 chemin de la ferme</p>
+                <p>11250 Caunette-sur-Lauquet</p>
+                <p>06 66 66 66 66</p>
+            </div>
+            <div id="sns">
+                <p>Retrouvez nous sur les réseaux !</p>
+                <div id="icon-container">
+                    <a id="facebook" href="#"/>
+                    <a id="pinterest" href="#"/>
+                    <a id="twitter" href="#"/>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>
